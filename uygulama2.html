@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <img id="cop" src="img/tesla-model-3-2022-0099.png" style="width: 300px;" alt=""
+        draggable="true">
+
+    <p><img src="img/1200px-Çöp_Kutusu_(bilgisayar)User-trash.svg.png" style="width: 300px" alt="" ondragenter="return false"
+            ondragover="return false" ondrop="Delete()">
+    </p>
+
+    <script>
+        function Delete() {
+            const pic = document.querySelector('#cop');
+            pic.parentNode.removeChild(pic)
+        }
+    </script>
+</body>
+
+</html>

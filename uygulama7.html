@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .transition {
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            padding: 20px;
+            background-color: darkred;
+            color: white;
+            -webkit-transition: all 1s ease-in-out;
+            transition: all 1s ease-in-out;
+        }
+
+        .transition2 {
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            padding: 20px;
+            background-color: darkred;
+            color: white;
+            -webkit-transition: all 1s ease-in-out;
+            transition: all 1s ease-in-out;
+        }
+
+        .transition3 {
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            padding: 20px;
+            background-color: darkred;
+            color: white;
+            -webkit-transition: all 1s ease-in-out;
+            transition: all 1s ease-in-out;
+        }
+
+        .transition4 {
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            padding: 20px;
+            background-color: darkred;
+            color: white;
+            -webkit-transition: all 1s ease-in-out;
+            transition: all 1s ease-in-out;
+        }
+
+        .transition5 {
+            clear: both;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            background-color: darkred;
+            color: white;
+            -webkit-transition: all 1s ease-in-out;
+            transition: all 1s ease-in-out;
+        }
+
+        .transition5 div {
+            cursor: pointer;
+            padding: 20px;
+            flex: 1;
+            background-color: darkred;
+            -webkit-transition: all 0.3s;
+            transition: all 0.3s;
+            text-align: center;
+        }
+
+        .transition5 div:hover {
+            flex: 1.9;
+            background-color: darkkhaki;
+        }
+
+        .transition:hover {
+            -webkit-transform: translate(-50px, -50px);
+            transform: translate(-50px, -50px);
+        }
+
+        .transition2:hover {
+            -webkit-transform: scale(2, 2);
+            transform: scale(2, 2);
+        }
+
+        .transition3:hover {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+
+        .transition4:hover {
+            -webkit-transform: skew(30deg);
+            transform: skew(30deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="transition"></div>
+    <div class="transition2"></div>
+    <div class="transition3"></div>
+    <div class="transition4"></div>
+    <div class="transition5">
+        <div>Sağa kaydır</div>
+        <div>İki tarafa kaydır</div>
+        <div>Sola kaydır</div>
+    </div>
+</body>
+
+</html>

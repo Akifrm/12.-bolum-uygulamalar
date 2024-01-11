@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .rules {
+            margin: 20px;
+            width: 80px;
+            height: 80px;
+            padding: 20px;
+            background-color: darkred;
+            position: relative;
+            color: white;
+            -webkit-animation: move 1s infinite;
+            animation: move 3s ease-in-out;
+        }
+
+        .time {
+           -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+        }
+
+        .time2 {
+            -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+        }
+
+        .time3 {
+            -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+        }
+
+        .time4 {
+            -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+        }
+
+        .time5 {
+            -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+        }
+
+        @keyframes move {
+            from {
+                left: 0;
+            }
+
+            to {
+                left: 450px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="rules time">Linear</div>
+    <div class="rules time2">ease</div>
+    <div class="rules time3">ease-in</div>
+    <div class="rules time4">ease-out</div>
+    <div class="rules time5">ease-in-out</div>
+</body>
+
+</html>

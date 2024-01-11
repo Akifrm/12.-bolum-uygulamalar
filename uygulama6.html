@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .transition {
+            width: 150px;
+            height: 100px;
+            margin: 20px;
+            background-color: darkolivegreen;
+            color: white;
+            -webkit-transition: width 2s, height 4s;
+            transition: width 2s, height 4s;
+        }
+
+        .transition2 {
+            width: 150px;
+            height: 100px;
+            margin: 20px;
+            background-color: darkolivegreen;
+            color: white;
+            -webkit-transition: width 2s;
+            -webkit-transition-delay: 1s;
+            transition: width 2s;
+            transition-delay: 1s;
+        }
+
+        .transition3 {
+            width: 150px;
+            height: 100px;
+            margin: 20px;
+            background-color: darkolivegreen;
+            color: white;
+            -webkit-transition: width 2s, height 1s, transform 1s;
+            transition: width 2s, height 1s, transform 1s;
+        }
+
+        .transition:hover {
+            width: 400px;
+            height: 200px;
+        }
+
+        .transition2:hover {
+            width: 400px;
+        }
+
+        .transition3:hover {
+            width: 400px;
+            height: 200px;
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+
+        .tr {
+            -webkit-transition-timing-function: linear;
+            transition-timing-function: linear;
+        }
+
+        .tr1 {
+            -webkit-transition-timing-function: ease;
+            transition-timing-function: ease;
+        }
+
+        .tr2 {
+            -webkit-transition-timing-function: ease-in;
+            transition-timing-function: ease-in;
+        }
+
+        .tr3 {
+            -webkit-transition-timing-function: ease-out;
+            transition-timing-function: ease-out;
+        }
+
+        .tr4 {
+            -webkit-transition-timing-function: ease-in-out;
+            transition-timing-function: ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="transition">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, possimus.</div>
+
+    <div class="transition2 tr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, possimus.</div>
+    <div class="transition2 tr1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, possimus.</div>
+    <div class="transition2 tr2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, possimus.</div>
+    <div class="transition2 tr3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, possimus.</div>
+    <div class="transition2 tr4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, possimus.</div>
+    
+    
+    <div class="transition3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, possimus.</div>
+</body>
+
+</html>
