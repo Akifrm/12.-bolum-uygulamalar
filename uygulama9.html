@@ -14,8 +14,20 @@
             background-color: darkred;
             position: relative;
             color: white;
-            -webkit-animation: move 1s infinite;
-            animation: move 3s ease-in-out;
+            -webkit-animation: move 5s linear infinite alternate;
+            animation: move 5s linear infinite alternate;
+        }
+
+        .rules2 {
+            margin: 20px;
+            width: 80px;
+            height: 80px;
+            padding: 20px;
+            background-color: darkred;
+            position: relative;
+            color: white;
+            -webkit-animation: move2 5s linear infinite alternate;
+            animation: move2 5s linear infinite alternate;
         }
 
         .time {
@@ -52,15 +64,49 @@
                 left: 450px;
             }
         }
+
+        @keyframes move2 {
+            0% {
+                background-color: darkgoldenrod;
+                top: 0;
+                left: 0;
+            }
+
+            25% {
+                background-color: deeppink;
+                top: 0;
+                left: 200px;
+            }
+
+            50% {
+                background-color: darkgreen;
+                top: 200px;
+                left: 200px;
+            }
+
+            75% {
+                background-color: darkblue;
+                top: 200px;
+                left: 0;
+            }
+
+            100% {
+                background-color: black;
+                top: 0;
+                left: 0;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <div class="rules time">Linear</div>
+    <div class="rules time">linear</div>
     <div class="rules time2">ease</div>
     <div class="rules time3">ease-in</div>
     <div class="rules time4">ease-out</div>
     <div class="rules time5">ease-in-out</div>
+
+    <div class="rules2">linear</div>
 </body>
 
 </html>
